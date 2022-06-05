@@ -3,6 +3,7 @@ use std::collections::HashMap;
 use actix_web::{web, get, App, HttpResponse, HttpServer, Result};
 use askama::Template;
 
+
 #[derive(Template)]
 #[template(path = "user.html")]
 struct UserTemplate<'a> {
